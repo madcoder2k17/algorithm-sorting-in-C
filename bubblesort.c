@@ -14,9 +14,9 @@ it actually did something ;)
 #define SWAP(a,b)   { int t; t=a; a=b; b=t; }  // Macro for swapping
 #define INDEX 8
 void bubble_srt(int a[], int n);
+int i,j;
 int main(void) 
 {
-   int i;
    int array[INDEX] = {12, 9, 4, 99, 120, 1, 3, 10};
    
    printf("Before the sort:\n");     // Show array elements before sort
@@ -55,9 +55,7 @@ is important because, as I said earlier, the array is to be sifted
 through once for each element in the array.
 ***************************************************************/
 void bubble_srt( int a[], int n )  
-{   
-    int i, j;
-       
+{       
     for(i = 0; i < n; i++)         // Make a pass through the array for each element
     {              
         for(j = 1; j < (n-i); j++) // Go through the array beginning to end
